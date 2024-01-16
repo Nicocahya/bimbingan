@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.125em;
+            line-height: 1.6;
+            color: 333;
+            padding: 2em;
+        }
+
+        .hero {
+        display: grid;
+        grid-gap: 2em;
+        align-items: center;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 960px) {
+        .hero { 
+            grid-template-columns: (repeat(2, 1fr));
+        }
+    }
+
+    </style>
+
+    
+
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello Nico</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Doloremque eius atque nam praesentium repellendus, </p>
+            <p>architecto fugit quo voluptate repudiandae. </p>    
+            <p>Doloribus modi repudiandae quod accusantium,</p>     
+            <p> veritatis totam? Molestias enim dolor libero!</p>
+        </div>
+        <picture>
+            <source media="(min-width: 960px)" srcset="NAGI1.jpg" sizes="50vw">   
+            <source media="(min-width: 600px)" srcset="NAGI2.webp" >
+            <img src="YOUNG-ANIME.STYLE.webp" alt="YOUNG-ANIME">
+        </picture>
+    </div>
+</body>
+</html>
