@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        body {
+            min-height: 1000px;
+        }
+        svg {
+            display: block;
+            margin: 20px;
+            background-color: black;
+        }
+        .satu {
+            background-color: #000000;
+            height: 300px;
+            width: 300px;
+
+        }
+        .kotak1{
+            width:100px ;
+            height:100px ;
+            fill:lightblue ;
+            x: 100px;
+            y: 100px;
+        }
+
+                  /* animasi */
+
+                   @keyframes putar {
+            0% {
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg class="satu" viewbox="0 0 300 300">
+        <rect class="kotak1"/>
+    </svg>
+
+    <svg width="150" height="150">
+        <rect width="50" height="100" fill="white"/>
+        <circle r="100" cx="100" cy="100" fill="black" />
+        <rect width="100" height="70" x="35" y="35" fill="white"/>
+    </svg>
+
+    <svg>
+        <path fill="none" stroke="blue"
+        d= "M 60,10 L 110,90 H 10 L 60,10"/>
+
+        <path fill="none" stroke="red"
+        d= "m 170,10 l 50,80 h -100 l 50,-80"/>
+    </svg>
+
+    <svg>
+        <path fill="none" stroke="white"
+        d="M 10,90 C 30,90 25,10 60,10 S 60,90 100,100"/>
+
+        <path fill="none" stroke="red"
+        d="M 170,90 C 50,90 25,10 110,10 S 60,90 100,100"/>
+    </svg>
+
+    <svg>
+        <path fill="blue" stroke="white"  d="M 10,30
+                 A 20,20 0,0,1 50,30
+                 A 20,20 0,0,1 90,30
+                 Q 90,60 50,90
+                 Q 10,60 10,30 z"/>
+    </svg>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<img src="lop.svg" alt="svg"> 
+</body>
+</html>
