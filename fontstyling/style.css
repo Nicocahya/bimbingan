@@ -1,0 +1,14 @@
+h1 {
+    color: rgb(255, 0, 157);
+    /* arial untuk h1 */
+    font-family: Arial;
+    font-size: 50px;
+    /* miring */
+    font-style: initial;
+}
+
+p {
+    /* georgia untuk p */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30%;
+}
