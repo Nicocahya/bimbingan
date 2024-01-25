@@ -20,8 +20,31 @@
             width: 100px;
             height: 100px;
             background-color: chartreuse;
-            transition: 50ms;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0px;
+            border-radius: 100%;
         }
+
+        .kotak1 {
+            transition: 3s 2s ease;
+        }
+        .kotak2 {
+            transition: 2s 2s ease-in;
+        }
+        .kotak3 {
+            transition: 3s 2s ease-out;
+        }
+        .kotak4 {
+            transition: 3s 2s ease-in-out;
+        }
+        .kotak5 {
+            transition: 3s 2s linear;
+        }
+        .kotak6 {
+            transition: 1s 2s cubic-bezier(1,-0.97, 0, 1.75);
+        }
+
         .container:hover .kotak {
             transform: rotate(900deg);
             margin-left: 800px;
@@ -31,7 +54,12 @@
 </head>
 <body>
     <div class="container">
-         <div class="kotak"></div>
+         <div class="kotak kotak1">ease</div>
+         <div class="kotak kotak2">ease-in</div>
+         <div class="kotak kotak3">ease-out</div>
+         <div class="kotak kotak4">ease-in-out</div>
+         <div class="kotak kotak5">linear</div>
+         <div class="kotak kotak6">cubic-bezier</div>
     </div>
 </body>
 </html>
