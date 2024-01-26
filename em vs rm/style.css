@@ -1,0 +1,21 @@
+
+
+.btn {
+    display: inline-block;
+    background: #333;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    padding: 1em 2em;
+    margin: 1.5em;
+}
+
+.btn-em {
+    font-size: 0.5em;
+}
+
+.btn-lg {
+    font-size: 3em;
+}
